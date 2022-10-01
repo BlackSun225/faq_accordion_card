@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-CI">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="faq_accordion_style.css"/>
+    <link rel="icon" type="x-icon/image" href="images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Faq accordion card main</title>
+    <script src="faq_accordion.js"></script>
+  </head>
+  <body>
+    <main>
+     <img class="box" alt="a 3D box" src="images/illustration-box-desktop.svg" />
+     <section class="start">
+       <img class="mobillus" alt="A woman in front of a screen" src="images/illustration-woman-online-mobile.svg" />
+       <img class="illus" alt="A woman in front of a screen" src="images/illustration-woman-online-desktop.svg" />
+     </section>
+     <section class="end">
+       <h1>FAQ</h1>
+       <div id="first" class="qa">
+         <div class="question"> 
+           <span>How many team members can I invite?</span>
+           <img alt="arrow" src="images/icon-arrow-down.svg" />
+         </div>
+         <div class="answer">
+          You can invite up to 7 team numbers.
+         </div>
+       </div>
+       <div class="qa">
+        <div class="question"> 
+          <span>What is the maximum file upload size?</span>
+          <img alt="arrow" src="images/icon-arrow-down.svg" />
+        </div>
+        <div class="answer">
+         No more than 2GB. All files in your account must fit you allotted 
+         storage space.
+        </div>
+      </div>
+      <div class="qa">
+        <div class="question"> 
+          <span>How do I reset my password?</span>
+          <img alt="arrow" src="images/icon-arrow-down.svg" />
+        </div>
+        <div class="answer">
+         Just try to connect yourself and just below the password input click on 
+         the text:"I forgot my password".
+        </div>
+      </div>
+      <div class="qa">
+        <div class="question"> 
+          <span>Can I cancel my subscription?</span>
+          <img alt="arrow" src="images/icon-arrow-down.svg" />
+        </div>
+        <div class="answer">
+         Yes you can cancel your subscription whenether you want.
+        </div>
+      </div>
+      <div class="qa">
+        <div class="question"> 
+          <span>Do you provide additional support?</span>
+          <img alt="arrow" src="images/icon-arrow-down.svg" />
+        </div>
+        <div class="answer">
+         Yes for sure, if you want additional support just send us and email.
+        </div>
+      </div>
+     </section> 
+    </main>
+    <script>
+      for(let i = 0; i < questionAns.length; i++) {
+  questionAns[i].addEventListener("click", function(){
+    displayAnswer(this);
+  })
+  questionAns[i].addEventListener("click", function(){
+    changeColor(this);
+  })
+  questionAns[i].addEventListener("click", function(){
+    rotateImg(this);
+  })
+  questionAns[i].addEventListener("mouseover", function(){
+    colorHover(this);
+  })
+  questionAns[i].addEventListener("mouseout", function(){
+    colorOut(this);
+  })   
+}
+    </script>
+  </body>
+</html>
